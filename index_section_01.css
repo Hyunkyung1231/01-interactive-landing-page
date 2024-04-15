@@ -1,0 +1,30 @@
+.section1_container {
+  position: relative;
+  top: 130px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.bold_highlight {
+  color: #d8232a;
+}
+
+.goldbear_packshot {
+  width: 330px;
+  transform: rotate(15deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.goldbear_packshot:hover {
+  transform: rotate(-15deg);
+}
+
+.section1_text_container > p {
+  font-weight: 200;
+  font-size: 2rem;
+  margin: 1px;
+  letter-spacing: 2px;
+}

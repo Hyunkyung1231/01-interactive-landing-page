@@ -1,0 +1,73 @@
+.section2_container {
+  position: relative;
+  top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 600;
+}
+
+.kneel_bear {
+  width: 25%;
+  position: absolute;
+  top: 100px;
+  right: 60px;
+  z-index: -100;
+}
+
+.info_box {
+  width: 20rem;
+  height: 13rem;
+  border-radius: 15px;
+  background-color: #d8232a;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info_box_question {
+  text-align: center;
+  width: 240px;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.info_box_answer {
+  text-align: center;
+  width: 240px;
+  color: white;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.info_row_1,
+.info_row_2 {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 카드 뒤집기 */
+
+.info_box_card {
+  display: inline-grid;
+  transition: transform 0.5s ease-in-out;
+  transform: perspective(1100px) rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.info_box_card > * {
+  grid-area: 1 / 1 / 1 / 1;
+  backface-visibility: hidden;
+  margin: 2.5;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.info_box_card:hover {
+  transform: perspective(1100px) rotateY(180deg);
+}

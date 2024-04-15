@@ -1,0 +1,95 @@
+* {
+  /* border: 1px solid black; */
+}
+
+.section3_container {
+  position: relative;
+  top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.slide_header {
+  margin-bottom: 4rem;
+}
+
+.slide_header_text {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: -5px;
+  margin: 0;
+}
+
+.slide_button_box {
+  position: absolute;
+  top: 300px;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slide {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #d8232a;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.carousel {
+  width: 60%;
+  overflow: hidden;
+}
+
+.slide_carrousel {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+.slide_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2.5rem;
+}
+
+.slide_image {
+  width: 200px;
+  transition: all 0.3s ease-in-out;
+}
+
+.slide_image_title {
+  font-weight: 300;
+  margin: 10px 0 5px 0;
+}
+
+.slide_image_product {
+  font-weight: 600;
+}
+
+/* hover 애니메이션 */
+.slide_image:hover,
+.slide_image:focus {
+  animation: rotate 2s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
